@@ -53,8 +53,7 @@ char** cut_string(char *str, char *sep, int* length){
     char* newstr;
     char* newsep;
     char** result;
-    int i = 0, j = 0;
-    int pre = 0;
+    int i = 0;
     if((newstr = (char*)malloc((strlen(str) + 1) * sizeof(char))) != NULL 
     && (newsep = (char*)malloc((strlen(sep) + 1) * sizeof(char))) != NULL){
         strcpy(newstr, str);
